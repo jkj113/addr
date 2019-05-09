@@ -5,11 +5,11 @@ import java.sql.SQLException;
 import java.util.List;
 import java.util.Map;
 
-import com.addr.db.AddressDAO;
+import com.addr.db.AddrDAO;
 
 import db.DBCon;
 
-public class AddressDAOImpl implements AddressDAO {
+public class AddrDAOImpl implements AddrDAO {
     private static final String INSERT_ADDRESS = " insert into address values(seq_ad_num.nextval, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
 	@Override
 	public int insertAddressList(List<Map<String, String>> addrList) {
